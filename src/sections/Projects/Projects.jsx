@@ -14,7 +14,7 @@ function Projects() {
           src={kobodrop}
           link="https://665b284f288c9ee6d24b21b5--deployed-kubodrop-app.netlify.app/"
           h3="Kobodrop"
-          p="Financial fronted App"
+          p="Financial frontend App"
         />
         <ProjectCard
           src={drumKit}
