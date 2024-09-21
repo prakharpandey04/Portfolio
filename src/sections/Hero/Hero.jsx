@@ -8,6 +8,8 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
+import leetCodeLight from "../../assets/leetcode-light.svg";
+import leetCodeDark from "../../assets/leetcode-dark.svg";
 import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
@@ -18,6 +20,7 @@ function Hero() {
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const leetCodeIcon = theme === "light" ? leetCodeLight : leetCodeDark;
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
@@ -48,6 +51,9 @@ function Hero() {
             target="_blank"
           >
             <img src={linkedinIcon} alt="Linkedin Icon" />
+          </a>
+          <a href="https://leetcode.com/u/prakharpandey04/" target="_blank">
+            <img src={leetCodeIcon} alt="Leetcode Icon" />
           </a>
         </span>
         <p className={styles.description}>
